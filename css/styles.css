@@ -11,6 +11,50 @@
 
 .global-footer{
     background-color:var(--backround);
+    height: 251px;
+    padding: 60px 0 60px 215px;
+}
+
+.global-footer .logo-bottom{
+    color: var(--link-active-color);
+    font-family: var(--heading-font-family);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    text-decoration: none;
+}
+
+.global-footer .logo-bottom span{
+    color: var(--heading-color);
+    font-family: var(--heading-font-family);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+
+.global-header .logo{
+    color: var(--link-active-color);
+    font-family: var(--heading-font-family);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    text-decoration: none;
+}
+
+.global-header .logo span{
+    color: var(--link-color);
+    font-family: var(--heading-font-family);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,16 +68,17 @@ ul {
 
 .social-links {
     color:var(--link-color);
-    font-family: Roboto;
+    font-family: var(--text-font-family);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    text-decoration:none;
 }
 
-.social-links.active {
-    color:var(--link-active-color);
+.global-header .social-links:hover{
+    color: var(--link-active-color);
 }
 
 .global-header .main-navigation a{
@@ -44,6 +89,7 @@ ul {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    text-decoration: none;
 }
 
 .global-header .main-navigation a.active {
@@ -117,6 +163,10 @@ ul {
     gap:30px;
 }
 
+.global-adress{
+    margin-top: 28px;
+    gap: 12px;
+}
  
 
 .global-footer .global-adress a{
@@ -127,6 +177,7 @@ ul {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.42px;
+    text-decoration: none;
 }
 
 .global-footer .global-adress span{
@@ -142,9 +193,9 @@ ul {
 .section-buttons ul, button{
     border-radius: 4px;
     background:var(--background-buttons);
-    color:var(--link-color);
+    color: #212121;
     text-align: center;
-    font-family: Roboto;
+    font-family: var(--text-font-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -154,6 +205,8 @@ ul {
 .section-buttons ul, button:hover{
     background-color:var(--link-active-color);
     color:var(--heading-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .list-services {
@@ -267,4 +320,48 @@ ul {
 }
 .team-images .image-employ em {
     margin-bottom: 30px;
+}
+
+.section-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    height: 38px;
+}
+
+.section-buttons button{
+   padding: 6px 22px;
+   font-weight: 700;
+   border: none;
+}
+
+.page-section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 94px 0;    
+}
+
+.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-service{
+    width: 370px;
+    border-bottom: 1px solid #EEE;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.card-grid .card-service span{
+    margin-top: 20px;
+    margin-bottom: 4px;
+
+}
+
+.card-grid .card-service em{
+    margin-bottom: 20px;
 }
