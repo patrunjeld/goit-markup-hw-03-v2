@@ -58,8 +58,13 @@ ul {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-    
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
 }
+
+
 
 .list-tags{
     color:var(--link-color);
@@ -69,6 +74,9 @@ ul {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
+    display: flex;
+    justify-content: center;
+    padding: 94px 215px;
 }
 
 .list-tags p{
@@ -79,6 +87,7 @@ ul {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+    margin-top: 10px;
 }
 
 .list-tags-team span{
@@ -102,6 +111,13 @@ ul {
     line-height: normal;
     letter-spacing: 0.48px;
 }
+
+.list-tags ul{
+    display: flex;
+    gap:30px;
+}
+
+ 
 
 .global-footer .global-adress a{
     color:var(--second-color);
@@ -175,4 +191,80 @@ ul {
     display: flex;
     width: 600px;
     justify-content: space-evenly;
+}
+
+.main-section .main-text{
+    background-color: #212121;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px; /* 136.364% */
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    width: 696px;
+}
+
+.section{
+    padding: 94px 0;
+    justify-content: center;
+}
+
+.title-section{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.img-section{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.list-tags-team{
+    height: 648px;
+    padding: 94px 0;
+    background-color: var(--background-buttons);
+}
+
+.team-title{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.team-images{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-images .image-employ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-images .image-employ span{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.team-images .image-employ em {
+    margin-bottom: 30px;
 }
